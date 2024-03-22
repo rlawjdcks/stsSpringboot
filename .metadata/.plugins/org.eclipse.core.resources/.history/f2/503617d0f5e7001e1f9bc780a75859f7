@@ -1,0 +1,5 @@
+package com.springex.springex.controller;
+
+public class AjaxController {
+
+}

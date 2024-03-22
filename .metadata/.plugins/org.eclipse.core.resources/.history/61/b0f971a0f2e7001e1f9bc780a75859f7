@@ -1,0 +1,52 @@
+package com.springex.springex;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.springex.springex.dao.MemberDao;
+import com.springex.springex.dto.Member;
+
+@SpringBootTest
+class SpringexApplicationTests {
+
+	@Autowired
+	private MemberDao memberDao;
+	
+	@Test
+	@DisplayName("assertEquals테스트")
+	public void test3() {
+		int before =memberDao.count();
+		Member member = Member.builder()
+				.name("가나")
+				.age(20)
+				.email("st123s@sts.com")
+				.text("hi").build();
+		memberDao.insert2(member);
+		int after =memberDao.count();
+		assertEquals(before,after);
+	}
+	
+	
+	//@Test
+	@DisplayName("selectAll() 테스트")
+	public void test1() {
+		System.out.println(memberDao.selectAll());
+	}
+	
+	
+//	@Test
+	@DisplayName("insert() 테스트")
+	public void test2() {
+		Member member = Member.builder()
+				.name("가나")
+				.age(20)
+				.email("sts@sts.com")
+				.text("hi").build();
+		memberDao.insert2(member);
+	}
+
+}

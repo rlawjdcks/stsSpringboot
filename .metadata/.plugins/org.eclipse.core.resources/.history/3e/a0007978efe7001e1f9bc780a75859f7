@@ -1,0 +1,31 @@
+package com.springex.springex;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.springex.springex.dao.MemberDao;
+import com.springex.springex.dto.Member;
+
+@SpringBootTest
+class SpringexApplicationTests {
+
+	@Autowired
+	private MemberDao memberDao;
+	
+	
+	
+	@Test
+	@DisplayName("selectAll() 테스트")
+	public void test1() {
+		System.out.println(memberDao.selectAll());
+	}
+	
+	@Test
+	@DisplayName("insert() 테스트")
+	public void test2() {
+		Member member = Member.builder().email("sts@sts.com");
+	}
+
+}

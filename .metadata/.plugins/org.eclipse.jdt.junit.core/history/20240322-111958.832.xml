@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SpringexApplicationTests" project="springex" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.springex.springex.SpringexApplicationTests" time="0.425" displayname="SpringexApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.springex.springex.SpringexApplicationTests]">
+    <testcase name="test3" classname="com.springex.springex.SpringexApplicationTests" time="0.425" displayname="assertEquals테스트" uniqueid="[engine:junit-jupiter]/[class:com.springex.springex.SpringexApplicationTests]/[method:test3()]"/>
+  </testsuite>
+</testrun>

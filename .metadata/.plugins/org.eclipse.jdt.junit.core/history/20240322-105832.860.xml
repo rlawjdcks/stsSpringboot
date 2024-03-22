@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SpringexApplicationTests" project="springex" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.springex.springex.SpringexApplicationTests" time="0.291" displayname="SpringexApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.springex.springex.SpringexApplicationTests]">
+    <testcase name="test1" classname="com.springex.springex.SpringexApplicationTests" time="0.264" displayname="selectAll() 테스트" uniqueid="[engine:junit-jupiter]/[class:com.springex.springex.SpringexApplicationTests]/[method:test1()]"/>
+    <testcase name="test2" classname="com.springex.springex.SpringexApplicationTests" time="0.026" displayname="insert() 테스트" uniqueid="[engine:junit-jupiter]/[class:com.springex.springex.SpringexApplicationTests]/[method:test2()]"/>
+  </testsuite>
+</testrun>
